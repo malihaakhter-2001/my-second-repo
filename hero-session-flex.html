@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>metting page with flex</title>
+
+    <style>
+        :root {
+            --blue: #0a0c19;
+            --dark-violet: #1b1938;
+            --violet: #aa5cdb;
+            --white: #fff;
+
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            background-color: var(--blue);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+     span{
+        color:var(--violet);
+     }
+        
+        .container {
+            background-color: var(--dark-violet);
+            height: 70vh;
+            width: 70%;
+            display: flex;
+            
+        }
+        
+
+        .text-container {
+            width: 50%;
+            color: var(--white);
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            
+        }
+        .statistics{
+            display: flex;
+            gap: 25px;
+        }
+
+        .image-container{
+
+            height: 100%;
+            width: 50%;
+        }
+
+        .image-container>img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position:left;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="text-container">
+            <div class="introduction">
+                <h1>Get <span>insights </span> help your business grow</h1><br><br><br>
+                <p>Discribe the benefits of data analysis and make better<br> decission regarding revenue,
+                    customer experience and overall <br>performance</p>
+            </div>
+            <div class="statistics">
+               <div>
+                <h1>10+</h1>
+                <p>CUSTOMERS</p>
+            </div>
+            <div>
+                <h1>325</h1>
+                <p>TEMPLATES</p>
+            </div>
+            <div>
+                <h1>16M+</h1>
+                <p>QUERIES</p>
+            </div> 
+        </div>
+    </div>
+
+<div class="image-container">
+    <img src="./image.jpg" alt="">
+</div>
+</div>
+</body>
+
+</html>
